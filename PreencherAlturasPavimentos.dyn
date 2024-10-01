@@ -1,0 +1,496 @@
+{
+  "Uuid": "3b949bdf-07c7-4d4d-a221-18fc41595efa",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "PreencherAlturasPavimentos",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 505,
+      "SelectedString": "OST_Levels",
+      "NodeType": "ExtensionNode",
+      "Id": "3f4594fc11cf4b39a6d9c90c0aba7033",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "05ffa856993248719d27cb2751f315bc",
+          "Name": "Category",
+          "Description": "A categoria selecionada.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas as categorias incorporadas."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategory, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "f63e2b2e114b466d907122a0c95d3524",
+      "Inputs": [
+        {
+          "Id": "aa33847277b248309cbafccc960e9cf8",
+          "Name": "Category",
+          "Description": "Categoria",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "3a6399d213034def8f0132473d1b77f9",
+          "Name": "Elements",
+          "Description": "Uma classe de elemento.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obter todos os elementos da categoria especificada no modelo."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.SetParameterByName@string,var",
+      "Id": "219271a01cdc4bef8edd1f6d64226b54",
+      "Inputs": [
+        {
+          "Id": "53f48538d87543ce80648f1859d45706",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0f7c9df215474bfab6d0457b93d8d973",
+          "Name": "parameterName",
+          "Description": "O nome do parâmetro a ser definido.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "86cc5003aa114db1a312468cc9a97387",
+          "Name": "value",
+          "Description": "O valor.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b19acde8d1394b33b23d6c9d3df6f56b",
+          "Name": "Element",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Defina um dos parâmetros do elemento.\n\nElement.SetParameterByName (parameterName: string, value: var): Element"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Nome",
+      "Id": "e3e4f478ee7f4285ae67ae5362af56be",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "da7b5423219b43538642b88a084f8f2c",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Cria uma sequência de caracteres."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Elevação",
+      "Id": "6295cc3f94fb49aea1580558d2379447",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8d987407c2b447a3bcc731643a0d6453",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Cria uma sequência de caracteres."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Revit.Elements.Element.SetParameterByName@string,var",
+      "Id": "dc9c3ce34a4f495ca1126a1f0ed16a34",
+      "Inputs": [
+        {
+          "Id": "8916c0a0781d4b6e99ce881038b8bb5e",
+          "Name": "element",
+          "Description": "Revit.Elements.Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c4908bd69975434e91777f212cf64021",
+          "Name": "parameterName",
+          "Description": "O nome do parâmetro a ser definido.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "1035cb080df148bb95ded1bf30efe789",
+          "Name": "value",
+          "Description": "O valor.\n\nvar",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b9cc926888f644b0b9a879cc09869b24",
+          "Name": "Element",
+          "Description": "Element",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Defina um dos parâmetros do elemento.\n\nElement.SetParameterByName (parameterName: string, value: var): Element"
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\npav = [\r\n    [\"TAMPO - CAIXA DAGUA\", 153.72],\r\n    [\"COBERTA\", 150.98],\r\n    [\"ROOFTOP\", 147.20],\r\n    [\"39º PAVIMENTO TIPO\", 0],\r\n    [\"38º PAVIMENTO TIPO\", 0],\r\n    [\"37º PAVIMENTO TIPO\", 0],\r\n    [\"36º PAVIMENTO TIPO\", 0],\r\n    [\"35º PAVIMENTO TIPO\", 0],\r\n    [\"34º PAVIMENTO TIPO\", 0],\r\n    [\"33º PAVIMENTO TIPO\", 0],\r\n    [\"32º PAVIMENTO TIPO\", 0],\r\n    [\"31º PAVIMENTO TIPO\", 0],\r\n    [\"30º PAVIMENTO TIPO\", 0],\r\n    [\"29º PAVIMENTO TIPO\", 0],\r\n    [\"28º PAVIMENTO TIPO\", 0],\r\n    [\"27º PAVIMENTO TIPO\", 0],\r\n    [\"26º PAVIMENTO TIPO\", 0],\r\n    [\"25º PAVIMENTO TIPO\", 0],\r\n    [\"24º PAVIMENTO TIPO\", 0],\r\n    [\"23º PAVIMENTO TIPO\", 0],\r\n    [\"22º PAVIMENTO TIPO\", 0],\r\n    [\"21º PAVIMENTO TIPO\", 0],\r\n    [\"20º PAVIMENTO TIPO\", 0],\r\n    [\"19º PAVIMENTO TIPO\", 0],\r\n    [\"18º PAVIMENTO TIPO\", 0],\r\n    [\"17º PAVIMENTO TIPO\", 0],\r\n    [\"16º PAVIMENTO TIPO\", 0],\r\n    [\"15º PAVIMENTO TIPO\", 0],\r\n    [\"14º PAVIMENTO TIPO\", 0],\r\n    [\"13º PAVIMENTO TIPO\", 0],\r\n    [\"12º PAVIMENTO TIPO\", 0],\r\n    [\"11º PAVIMENTO TIPO\", 0],\r\n    [\"10º PAVIMENTO TIPO\", 0],\r\n    [\"9º PAVIMENTO TIPO\", 0],\r\n    [\"8º PAVIMENTO TIPO\", 0],\r\n    [\"7º PAVIMENTO TIPO\", 0],\r\n    [\"6º PAVIMENTO TIPO\", 0],\r\n    [\"5º PAVIMENTO TIPO\", 0],\r\n    [\"4º PAVIMENTO TIPO\", 0],\r\n    [\"3º PAVIMENTO TIPO\", 0],\r\n    [\"2º PAVIMENTO TIPO\", 0],\r\n    [\"1º PAVIMENTO TIPO\", 27.32],\r\n    [\"PAVTO LAZER\", 23.72],\r\n    [\"3º PAVTO GARAGEM\", 20.12],\r\n    [\"2º PAVTO GARAGEM\", 17.06],\r\n    [\"1º PAVTO GARAGEM\", 14.18],\r\n    [\"PAVTO INTERMEDIÁRIO\", 11.30],\r\n    [\"TÉRREO\", 8.24],\r\n    [\"SUBSOLO\", 5.36]\r\n]\r\n\r\n# Invertendo a lista para preencher de baixo para cima\r\npav.reverse()\r\n\r\n# Inicializando lista para pavimentos completos\r\npav_completo = []\r\n\r\n# Variável para guardar a última altura válida\r\nultima_altura = None\r\n\r\n# Definindo o pé-direito\r\npe_direito = 3.06\r\n\r\n# Preenchendo as alturas faltantes\r\nfor i in range(len(pav)):\r\n    if pav[i][1] > 0:\r\n        ultima_altura = pav[i][1]\r\n        pav_completo.append([pav[i][0], pav[i][1]])\r\n    else:\r\n        if ultima_altura is not None:\r\n            nova_altura = ultima_altura + pe_direito\r\n            pav_completo.append([pav[i][0], nova_altura])\r\n            ultima_altura = nova_altura\r\n\r\n# Revertendo a lista de volta à ordem original\r\npav_completo.reverse()\r\n\r\n# Saída final\r\nOUT = pav_completo",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "691d984573954093befea50fee07ed7c",
+      "Inputs": [
+        {
+          "Id": "9367e8c2b1184ac4abf454b91c70b906",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a2f9de69c504428688fb269c4101f90e",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nOUT = [i[0] for i in IN[0]]",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "dca21111857e4f33913fff0069bc1d81",
+      "Inputs": [
+        {
+          "Id": "99ccba1acd0847d2948f409811b94532",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "1822df17b99a4c559b06fea5e1068d55",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nOUT = [i[1] for i in IN[0]]",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "b30d83a63e8b4ba983f32877a0881c40",
+      "Inputs": [
+        {
+          "Id": "03cad32f0f014b67b773dd8015a3f539",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ae74cbaf2c32439fbe5d02abe3dc4617",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "05ffa856993248719d27cb2751f315bc",
+      "End": "aa33847277b248309cbafccc960e9cf8",
+      "Id": "e3de19a6cfde450098f83a0ab9ed5f5f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3a6399d213034def8f0132473d1b77f9",
+      "End": "53f48538d87543ce80648f1859d45706",
+      "Id": "1a024da0ea9342ad9169b2ae6b59eb88",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3a6399d213034def8f0132473d1b77f9",
+      "End": "8916c0a0781d4b6e99ce881038b8bb5e",
+      "Id": "e91486b267a24babb343256c9b82cb2c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "da7b5423219b43538642b88a084f8f2c",
+      "End": "0f7c9df215474bfab6d0457b93d8d973",
+      "Id": "bc045a6c3d434ed1950817a0500eb98b",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "8d987407c2b447a3bcc731643a0d6453",
+      "End": "c4908bd69975434e91777f212cf64021",
+      "Id": "dd4c6e8aa4df428789b6b203da971a44",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a2f9de69c504428688fb269c4101f90e",
+      "End": "99ccba1acd0847d2948f409811b94532",
+      "Id": "8a49b2efa592463bb68b2aa1b4de8e14",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "a2f9de69c504428688fb269c4101f90e",
+      "End": "03cad32f0f014b67b773dd8015a3f539",
+      "Id": "7588ebe7f7e9456998ae25319c3a9a21",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1822df17b99a4c559b06fea5e1068d55",
+      "End": "86cc5003aa114db1a312468cc9a97387",
+      "Id": "fda35f4e2dbe4d22b2c2c44470260770",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "ae74cbaf2c32439fbe5d02abe3dc4617",
+      "End": "1035cb080df148bb95ded1bf30efe789",
+      "Id": "b2f8070e0f0847418148abe147cfeff3",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Nenhum",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.1.3887",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Visualização do plano de fundo",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "Categories",
+        "ShowGeometry": true,
+        "Id": "3f4594fc11cf4b39a6d9c90c0aba7033",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 93.0,
+        "Y": 244.0
+      },
+      {
+        "Name": "All Elements of Category",
+        "ShowGeometry": true,
+        "Id": "f63e2b2e114b466d907122a0c95d3524",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 467.0,
+        "Y": 206.0
+      },
+      {
+        "Name": "Element.SetParameterByName",
+        "ShowGeometry": true,
+        "Id": "219271a01cdc4bef8edd1f6d64226b54",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1123.7235484035673,
+        "Y": 839.15422896215273
+      },
+      {
+        "Name": "String",
+        "ShowGeometry": true,
+        "Id": "e3e4f478ee7f4285ae67ae5362af56be",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 431.89522716447476,
+        "Y": 439.28068997978943
+      },
+      {
+        "Name": "String",
+        "ShowGeometry": true,
+        "Id": "6295cc3f94fb49aea1580558d2379447",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 454.990045657719,
+        "Y": 639.840955842174
+      },
+      {
+        "Name": "Element.SetParameterByName",
+        "ShowGeometry": true,
+        "Id": "dc9c3ce34a4f495ca1126a1f0ed16a34",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1160.5179214556179,
+        "Y": 1122.8997807106339
+      },
+      {
+        "Name": "Python Script",
+        "ShowGeometry": true,
+        "Id": "691d984573954093befea50fee07ed7c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 491.18933276415908,
+        "Y": 1014.9575485551105
+      },
+      {
+        "Name": "Python Script",
+        "ShowGeometry": true,
+        "Id": "dca21111857e4f33913fff0069bc1d81",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 786.93753996589419,
+        "Y": 931.00965442680683
+      },
+      {
+        "Name": "Python Script",
+        "ShowGeometry": true,
+        "Id": "b30d83a63e8b4ba983f32877a0881c40",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 763.20717765259383,
+        "Y": 1144.5829152465099
+      }
+    ],
+    "Annotations": [],
+    "X": -428.85736890033718,
+    "Y": -497.32689462419057,
+    "Zoom": 0.61287157476433307
+  }
+}
