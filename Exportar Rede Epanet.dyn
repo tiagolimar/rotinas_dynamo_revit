@@ -1,0 +1,763 @@
+{
+  "Uuid": "d6cb45ba-552a-41c9-b14a-93522102d055",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Home",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "79c72daa44ec463ab23210155b487640",
+      "Name": "Parameter Name",
+      "Type": "string",
+      "Value": "FD_Código_de_Legenda",
+      "Description": "Cria uma sequência de caracteres.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategoryInView, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "ca46dec1a9454340ba22583b9988e48e",
+      "Inputs": [
+        {
+          "Id": "bf513a074bfa4f6aa7e1194a47470885",
+          "Name": "Category",
+          "Description": "Categoria",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dadf4d9683224bf3857d568b40a3953e",
+          "Name": "View",
+          "Description": "A vista",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9497ffb2e84c44ffba898566cc077838",
+          "Name": "Elements",
+          "Description": "Uma classe de elemento.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtenha todos os elementos da categoria especificada na vista especificada no modelo."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
+      "SelectedIndex": 40,
+      "SelectedString": "TABELA DE NÓS",
+      "NodeType": "ExtensionNode",
+      "Id": "11a1f2d6024e47e08a8e8b86a3a31120",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3690e68899cd41c68b809b912633ca09",
+          "Name": "Views",
+          "Description": "O Views selecionado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas as vistas disponíveis no documento atual."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Views, DSRevitNodesUI",
+      "SelectedIndex": 41,
+      "SelectedString": "TABELA DE TRECHOS",
+      "NodeType": "ExtensionNode",
+      "Id": "70de4e54a23340d0a65e76b5edc0e23d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2eed15bf3ee24b8498f1ad9a16f3253e",
+          "Name": "Views",
+          "Description": "O Views selecionado",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas as vistas disponíveis no documento atual."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.ElementsOfCategoryInView, DSRevitNodesUI",
+      "NodeType": "ExtensionNode",
+      "Id": "f020a8d16ea44c059a99bbbfab50405b",
+      "Inputs": [
+        {
+          "Id": "8223fe3d5d934961b2760a771270bf16",
+          "Name": "Category",
+          "Description": "Categoria",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8f5c48e9681a44109e715af7552d3357",
+          "Name": "View",
+          "Description": "A vista",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "70201546929240b685afa1581baefa41",
+          "Name": "Elements",
+          "Description": "Uma classe de elemento.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Obtenha todos os elementos da categoria especificada na vista especificada no modelo."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 695,
+      "SelectedString": "OST_PipeCurves",
+      "NodeType": "ExtensionNode",
+      "Id": "1ecbbd172eb0418fa211fdbf8b5b9ee6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d5df09bb33ca40b28f326da3fecb6766",
+          "Name": "Category",
+          "Description": "A categoria selecionada.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas as categorias incorporadas."
+    },
+    {
+      "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
+      "SelectedIndex": 536,
+      "SelectedString": "OST_PlumbingFixtures",
+      "NodeType": "ExtensionNode",
+      "Id": "790f66b1b7204b41974ebad81141fc10",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "8cf2125d45a54429a9f013c0e89825ce",
+          "Name": "Category",
+          "Description": "A categoria selecionada.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Todas as categorias incorporadas."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nparam_name = IN[1]\r\nprefix = 'T'\r\n\r\nfor index,element in enumerate(IN[0]):\r\n    element.SetParameterByName(param_name,prefix+str(index+1))\r\n    \r\nOUT = IN[0]",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "8b7d32312c3a4e39ab6a7ccd66e2fd95",
+      "Inputs": [
+        {
+          "Id": "2822461c6d4243c58ca8539ff7ebfb50",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "2864a1db7d514af2acf1e1b8ba16f4a4",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "94b352f096544046ab85ce8d8580df45",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "import clr\r\nclr.AddReference('RevitServices')\r\nfrom RevitServices.Persistence import DocumentManager\r\n\r\nclr.AddReference('RevitNodes')\r\nimport Revit\r\nclr.ImportExtensions(Revit.Elements)\r\nclr.ImportExtensions(Revit.GeometryConversion)\r\n\r\nclr.AddReference('RevitAPI')\r\nfrom Autodesk.Revit.DB import *\r\n\r\n# Obtém o documento ativo\r\ndoc = DocumentManager.Instance.CurrentDBDocument\r\n\r\ndef verifica_colisao(elemento1, elemento2):\r\n    \"\"\"\r\n    Verifica se dois elementos colidem no Revit usando Dynamo.\r\n    \r\n    Args:\r\n        elemento1: Primeiro elemento do Revit.\r\n        elemento2: Segundo elemento do Revit.\r\n        \r\n    Returns:\r\n        True se houver colisão, False caso contrário.\r\n    \"\"\"\r\n    opt = Options()  # Opções para obter a geometria\r\n    geo1 = elemento1.get_Geometry(opt)\r\n    geo2 = elemento2.get_Geometry(opt)\r\n\r\n    # Converter a geometria em sólidos\r\n    solidos1 = [g for g in geo1 if isinstance(g, Solid) and g.Volume > 0]\r\n    solidos2 = [g for g in geo2 if isinstance(g, Solid) and g.Volume > 0]\r\n\r\n    # Verificar interseção entre os sólidos\r\n    for s1 in solidos1:\r\n        for s2 in solidos2:\r\n            if BooleanOperationsUtils.ExecuteBooleanOperation(s1, s2, BooleanOperationsType.Intersect).Volume > 0:\r\n                return True  # Colisão detectada\r\n\r\n    # Se não encontrou sólidos, verificar interseção da Bounding Box\r\n    bbox1 = elemento1.get_BoundingBox(None)\r\n    bbox2 = elemento2.get_BoundingBox(None)\r\n\r\n    if bbox1 and bbox2:\r\n        min1, max1 = bbox1.Min, bbox1.Max\r\n        min2, max2 = bbox2.Min, bbox2.Max\r\n        \r\n        # Teste de interseção das Bounding Boxes\r\n        if (min1.X <= max2.X and max1.X >= min2.X and\r\n            min1.Y <= max2.Y and max1.Y >= min2.Y and\r\n            min1.Z <= max2.Z and max1.Z >= min2.Z):\r\n            return True  # Colisão detectada na Bounding Box\r\n\r\n    return False  # Sem colisão\r\n\r\n\r\ndef mapear_colisoes(pecas, tubos):\r\n    \"\"\"\r\n    Mapeia tubos para as peças que colidem com eles, usando o ID real de cada elemento como identificador.\r\n\r\n    Args:\r\n        pecas (list): Lista de peças do Revit.\r\n        tubos (list): Lista de tubos do Revit.\r\n\r\n    Returns:\r\n        dict: Dicionário onde cada chave é o ID de um tubo e o valor é uma lista \r\n              com os IDs das peças que colidem com ele (máximo de 2).\r\n    \"\"\"\r\n    colisoes = {}\r\n\r\n    for tubo in tubos:\r\n        pecas_colidindo = []\r\n\r\n        # Obtém o ID do tubo\r\n        id_tubo = str(tubo.Id.IntegerValue)\r\n\r\n        for peca in pecas:\r\n            if verifica_colisao(peca, tubo):\r\n                # Obtém o ID da peça\r\n                id_peca = str(peca.Id.IntegerValue)\r\n                pecas_colidindo.append(id_peca)\r\n\r\n            # Se já tem duas peças colidindo, paramos a verificação para esse tubo\r\n            if len(pecas_colidindo) == 2:\r\n                break\r\n\r\n        # Adiciona ao dicionário apenas se houver pelo menos uma colisão\r\n        if pecas_colidindo:\r\n            colisoes[id_tubo] = pecas_colidindo\r\n\r\n    return colisoes\r\n\r\n\r\n\r\n# Entrada do Dynamo (listas de elementos do Revit)\r\npecas = [UnwrapElement(e) for e in IN[0]]\r\ntubos = [UnwrapElement(e) for e in IN[1]]\r\n\r\n# Saída do Dynamo\r\nOUT = mapear_colisoes(pecas, tubos)\r\n",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "114186702f9c4c40a20a5b401e29a955",
+      "Inputs": [
+        {
+          "Id": "8e67c8fe608d4172806bc8026d8acc40",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dc1f8caaaadc4894a133d11d88c7ee83",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b716fba92ccc4fdeacea618f63670cc4",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "797e309893484c08a6a4a02da2970bc5",
+      "Inputs": [
+        {
+          "Id": "e2551b07275c4f33ad44d26427428185",
+          "Name": "",
+          "Description": "Nó do qual a saída é exibida",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "fd81f5cdc84f4e188222460bbeb67aea",
+          "Name": "",
+          "Description": "Saída do nó",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualizar a saída do nó"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "FD_Código_de_Legenda",
+      "Id": "79c72daa44ec463ab23210155b487640",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "1cd1c988d9f44411956d9528f3b0d85f",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Cria uma sequência de caracteres."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nparam_name = IN[1]\r\nprefix = 'N'\r\n\r\nfor index,element in enumerate(IN[0]):\r\n    element.SetParameterByName(param_name,prefix+str(index+1))\r\n    \r\nOUT = IN[0]",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "e5a8b023b73745938dec5f4985475051",
+      "Inputs": [
+        {
+          "Id": "dc040963ad46425682f2451795ca13bd",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0202e43befb34a80aa10883ee88af89b",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d029f89733074ac8911b0561d79d6135",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\ntemplate = \"\"\"\r\n[TITLE]\r\n\r\n\r\n[JUNCTIONS]\r\n;ID              \tElev        \tDemand      \tPattern         \r\n{{}}\r\n\r\n[RESERVOIRS]\r\n;ID              \tHead        \tPattern         \r\n\r\n[TANKS]\r\n;ID              \tElevation   \tInitLevel   \tMinLevel    \tMaxLevel    \tDiameter    \tMinVol      \tVolCurve\r\n N71             \t48.6        \t1.0000      \t0.1000      \t1.9000      \t1000.0000   \t78539.8163  \t                \t;\r\n\r\n[PIPES]\r\n;ID              \tNode1           \tNode2           \tLength      \tDiameter    \tRoughness   \tMinorLoss   \tStatus\r\n{{}}\r\n\r\n[PUMPS]\r\n;ID              \tNode1           \tNode2           \tParameters\r\n\r\n[VALVES]\r\n;ID              \tNode1           \tNode2           \tDiameter    \tType\tSetting     \tMinorLoss   \r\n\r\n[TAGS]\r\n\r\n[DEMANDS]\r\n;Junction        \tDemand      \tPattern         \tCategory\r\n\r\n[STATUS]\r\n;ID              \tStatus/Setting\r\n\r\n[PATTERNS]\r\n;ID              \tMultipliers\r\n\r\n[CURVES]\r\n;ID              \tX-Value     \tY-Value\r\n\r\n[CONTROLS]\r\n\r\n\r\n\r\n[RULES]\r\n\r\n\r\n\r\n[ENERGY]\r\n Global Efficiency  \t75.0000\r\n Global Price       \t0\r\n Demand Charge      \t0.0000\r\n\r\n[EMITTERS]\r\n;Junction        \tCoefficient\r\n\r\n[QUALITY]\r\n;Node            \tInitQual\r\n\r\n[SOURCES]\r\n;Node            \tType        \tQuality     \tPattern\r\n\r\n[REACTIONS]\r\n;Type     \tPipe/Tank       \tCoefficient\r\n\r\n\r\n[REACTIONS]\r\n Order Bulk            \t1.00\r\n Order Tank            \t1.00\r\n Order Wall            \t1\r\n Global Bulk           \t0.000000\r\n Global Wall           \t0.000000\r\n Limiting Potential    \t0\r\n Roughness Correlation \t0\r\n\r\n[MIXING]\r\n;Tank            \tModel\r\n\r\n[TIMES]\r\n Duration           \t0:00 \r\n Hydraulic Timestep \t1:00 \r\n Quality Timestep   \t0:06 \r\n Pattern Timestep   \t1:00 \r\n Pattern Start      \t0:00 \r\n Report Timestep    \t1:00 \r\n Report Start       \t0:00 \r\n Start ClockTime    \t0:00:00\r\n Statistic          \tNONE\r\n\r\n[REPORT]\r\n Status             \tNo\r\n Summary            \tNo\r\n Page               \t0\r\n\r\n[OPTIONS]\r\n Units              \tLPS\r\n Headloss           \tH-W\r\n Specific Gravity   \t1.000000\r\n Viscosity          \t1.000000\r\n Trials             \t200\r\n Accuracy           \t0.00100000\r\n CHECKFREQ          \t10\r\n MAXCHECK           \t10\r\n DAMPLIMIT          \t0.00000000\r\n Unbalanced         \tSTOP\r\n Pattern            \t1\r\n Demand Multiplier  \t1.0000\r\n Emitter Exponent   \t0.5000\r\n Quality            \tNONE mg/L\r\n Diffusivity        \t1.000000\r\n Tolerance          \t0.01000000\r\n\r\n[COORDINATES]\r\n;Node            \tX-Coord         \tY-Coord\r\n{{}}\r\n\r\n[VERTICES]\r\n;Link            \tX-Coord         \tY-Coord\r\n\r\n[LABELS]\r\n;X-Coord           Y-Coord          Label & Anchor Node\r\n\r\n[BACKDROP]\r\n DIMENSIONS     \t567053.52       \t9560153.01      \t567646.75       \t9560631.57      \r\n UNITS          \tNone\r\n FILE           \t\r\n OFFSET         \t0.00            \t0.00            \r\n\r\n[END]\r\n\r\n\"\"\"\r\nOUT = template",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "1005a0f673134fe896c833e441a2fe90",
+      "Inputs": [
+        {
+          "Id": "a59616a97473440a83eb6034d7e2c98f",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "dcf604c82af0493580632e1238fb4700",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "import clr\r\nclr.AddReference(\"RevitServices\")\r\nfrom RevitServices.Persistence import DocumentManager\r\nclr.AddReference(\"RevitAPI\")\r\nfrom Autodesk.Revit.DB import *\r\n\r\ntemplate = IN[0]\r\nmap_pipes = IN[1]\r\nnodes = IN[2]\r\n\r\ndef generate_list_node_with_elevation(nodes):\r\n    \"\"\"\r\n    Gera uma string formatada com as informações de elevação e rugosidade das peças.\r\n\r\n    FD_Código_de_Legenda    Elevation(Y)   FD_Vazão\r\n     N60             \t35.4000     \t0.14        \t                \t;\r\n\r\n    Args:\r\n        nodes (list): Lista de peças hidrossanitárias (elementos do Dynamo).\r\n\r\n    Returns:\r\n        str: String formatada com os dados das peças.\r\n    \"\"\"\r\n    linhas = []\r\n    fator_conversao = 0.3048  # Conversão de pés para metros\r\n\r\n    for node in nodes:\r\n        elemento = UnwrapElement(node)  # Desembrulha o elemento do Dynamo\r\n\r\n        # Obtém os parâmetros da peça\r\n        codigo_legenda = elemento.LookupParameter(\"FD_Código_de_Legenda\").AsString()\r\n        vazao = elemento.LookupParameter(\"FD_Vazão\").AsDouble()\r\n\r\n        # Obtém a elevação a partir da coordenada Z do Location\r\n        location = elemento.Location\r\n        if isinstance(location, LocationPoint):\r\n            elevacao = location.Point.Z * fator_conversao  # Convertendo para metros\r\n        else:\r\n            continue  # Se não tiver LocationPoint, ignora o elemento\r\n\r\n        # Formata os valores para garantir alinhamento e espaçamento correto\r\n        linha_formatada = \"{:<20}\\t{:<10.4f}\\t{:<10.2f}\\t\\t\\t;\".format(\r\n            codigo_legenda, elevacao, vazao\r\n        )\r\n\r\n        linhas.append(linha_formatada)\r\n\r\n    return \"\\n\".join(linhas)\r\n\r\n\r\ndef generate_list_pipes(map_pipes):\r\n    \"\"\"\r\n    Gera uma string formatada com as informações dos tubos e suas conexões.\r\n\r\n    FD_Código_de_Legenda    Node1   Node2   Comprimento  Diâmetro interno  FD_Rugosidade\r\n     T3              \tN46             \tN60             \t26.7093     \t100         \t140         \t0.0000      \tOpen  \t;\r\n\r\n    Args:\r\n        map_pipes (dict): Dicionário onde as chaves são IDs de tubos (string)\r\n                          e os valores são listas com os IDs das peças conectadas.\r\n\r\n    Returns:\r\n        str: String formatada com os dados dos tubos.\r\n    \"\"\"\r\n    doc = DocumentManager.Instance.CurrentDBDocument\r\n    linhas = []\r\n    fator_conversao = 0.3048  # Conversão de pés para metros\r\n\r\n    for tubo_id, pecas_ids in map_pipes.items():\r\n        elemento_tubo = doc.GetElement(ElementId(int(tubo_id)))  # Obtém o tubo pelo ID\r\n\r\n        # Verifica se o elemento foi encontrado\r\n        if not elemento_tubo:\r\n            continue\r\n\r\n        # Obtém o FD_Código_de_Legenda do tubo\r\n        codigo_tubo = elemento_tubo.LookupParameter(\"FD_Código_de_Legenda\").AsString()\r\n\r\n        # Obtém os FD_Código_de_Legenda das peças conectadas\r\n        codigo_pecas = []\r\n        for peca_id in pecas_ids:\r\n            elemento_peca = doc.GetElement(ElementId(int(peca_id)))\r\n\r\n            # Verifica se o elemento foi encontrado\r\n            if not elemento_peca:\r\n                continue\r\n\r\n            codigo_legenda_peca = elemento_peca.LookupParameter(\"FD_Código_de_Legenda\").AsString()\r\n            codigo_pecas.append(codigo_legenda_peca)\r\n\r\n        # Se não houver exatamente 2 peças conectadas, ignoramos o tubo\r\n        if len(codigo_pecas) != 2:\r\n            continue\r\n\r\n        # Obtém os valores usando BuiltInParameters\r\n        comprimento = elemento_tubo.get_Parameter(BuiltInParameter.CURVE_ELEM_LENGTH).AsDouble() * fator_conversao  # Unidade segue a do modelo\r\n        diametro = elemento_tubo.get_Parameter(BuiltInParameter.RBS_PIPE_DIAMETER_PARAM).AsDouble()  # Em unidades do modelo\r\n        \r\n        # Obtém o tipo do tubo e busca o FD_Rugosidade\r\n        tipo_tubo = doc.GetElement(elemento_tubo.GetTypeId())  # Obtém o ElementType do tubo\r\n        rugosidade = tipo_tubo.LookupParameter(\"FD_Rugosidade\").AsDouble()\r\n\r\n        # Formata a linha com os dados do tubo\r\n        linha_formatada = \"{:<20}\\t{:<10}\\t{:<10}\\t{:<10.4f}\\t{:<10.0f}\\t{:<10.0f}\\t{:<10.4f}\\tOpen  \t;\".format(\r\n            codigo_tubo, codigo_pecas[0], codigo_pecas[1], comprimento, diametro, rugosidade, 0.0000\r\n        )\r\n\r\n        linhas.append(linha_formatada)\r\n\r\n    return \"\\n\".join(linhas)\r\n\r\n\r\ndef generate_list_node_whit_coord(nodes):\r\n    \"\"\"\r\n    Gera uma string formatada com os nós e suas coordenadas X e Y convertidas para metros.\r\n\r\n    ;Node            \tX-Coord         \tY-Coord\r\n     N60             \t567205.58       \t9560387.76      \r\n\r\n    Args:\r\n        nodes (list): Lista de peças hidrossanitárias.\r\n\r\n    Returns:\r\n        str: String formatada com os dados dos nós.\r\n    \"\"\"\r\n    doc = DocumentManager.Instance.CurrentDBDocument\r\n    fator_conversao = 0.3048  # Conversão de pés para metros\r\n    linhas = []\r\n\r\n    for node in nodes:\r\n        elemento = UnwrapElement(node)  # Desembrulha o elemento do Dynamo\r\n\r\n        # Obtém os parâmetros da peça\r\n        codigo_legenda = elemento.LookupParameter(\"FD_Código_de_Legenda\").AsString()\r\n\r\n        # Obtém a posição da peça\r\n        location = elemento.Location\r\n        if isinstance(location, LocationPoint):\r\n            x_coord = location.Point.X * fator_conversao  # Convertendo para metros\r\n            y_coord = location.Point.Y * fator_conversao  # Convertendo para metros\r\n        else:\r\n            continue  # Se não tiver LocationPoint, ignora o elemento\r\n\r\n        # Formata a linha mantendo alinhamento e espaçamentos corretos\r\n        linha_formatada = \"{:<20}\\t{:<15.2f}\\t{:<15.2f}\".format(\r\n            codigo_legenda, x_coord, y_coord\r\n        )\r\n\r\n        linhas.append(linha_formatada)\r\n\r\n    return \"\\n\".join(linhas)\r\n    \r\n\r\ndef generate_document(template, nodes, map_pipes):\r\n    \"\"\"\r\n    Substitui os placeholders no template pelos dados gerados das peças e tubos.\r\n\r\n    Args:\r\n        template (str): Template base do documento.\r\n        nodes (list): Lista de peças hidrossanitárias.\r\n        map_pipes (dict): Dicionário de tubos e suas conexões.\r\n\r\n    Returns:\r\n        str: Documento final com os placeholders substituídos.\r\n    \"\"\"\r\n    # Gerar os trechos do documento\r\n    doc_nodes_elevations = generate_list_node_with_elevation(nodes)\r\n    doc_pipes = generate_list_pipes(map_pipes)\r\n    doc_nodes_coord = generate_list_node_whit_coord(nodes)\r\n\r\n    # Substituir os placeholders no template\r\n    doc = template.replace(\"{{}}\", doc_nodes_elevations, 1) \\\r\n                  .replace(\"{{}}\", doc_pipes, 1) \\\r\n                  .replace(\"{{}}\", doc_nodes_coord, 1)\r\n\r\n    return doc\r\n\r\nOUT = generate_document(template, nodes, map_pipes)",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "13cd07be46ac42c88827766366df4da0",
+      "Inputs": [
+        {
+          "Id": "9455fce7147d4ce4932987ae9507ec89",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c88a39d2bc984d549b6e4e87911a885a",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "d944b20da9e84e03b0e080afcd6f70aa",
+          "Name": "IN[2]",
+          "Description": "Input #2",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "12ae46c6d530442c935a0fdc3896fcb2",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    },
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Carregar as bibliotecas DesignScript e padrão do Python\r\nimport sys\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nimport os\r\n\r\ndef save_to_inp_file(content, filename=\"rede_hidraulica.inp\"):\r\n    \"\"\"\r\n    Salva uma string em um arquivo .inp na pasta Documentos do usuário.\r\n\r\n    Args:\r\n        content (str): O conteúdo a ser salvo no arquivo.\r\n        filename (str): Nome do arquivo (padrão: \"rede_hidraulica.inp\").\r\n\r\n    Returns:\r\n        str: Caminho completo do arquivo salvo.\r\n    \"\"\"\r\n    # Obtém o caminho da pasta Documentos do usuário\r\n    documentos_path = os.path.expanduser(\"~/Documents\")\r\n\r\n    # Caminho completo do arquivo\r\n    file_path = os.path.join(documentos_path, filename)\r\n\r\n    # Escreve a string no arquivo .inp\r\n    with open(file_path, \"w\", encoding=\"utf-8\") as file:\r\n        file.write(content)\r\n\r\n    return file_path  # Retorna o caminho do arquivo salvo\r\n\r\nOUT = save_to_inp_file(IN[0])",
+      "Engine": "CPython3",
+      "VariableInputPorts": true,
+      "Id": "54fa2ce8488d4f53b785b726e733f3f7",
+      "Inputs": [
+        {
+          "Id": "1b53a515dbcd43c7b071ab269ee0698e",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "17f7c8b6e776422780af8501c11a0af6",
+          "Name": "OUT",
+          "Description": "Resultado do script Python",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Executa um script Python incorporado."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "9497ffb2e84c44ffba898566cc077838",
+      "End": "dc040963ad46425682f2451795ca13bd",
+      "Id": "b1bdaa8fd8c74973b667859d87dae592",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "3690e68899cd41c68b809b912633ca09",
+      "End": "dadf4d9683224bf3857d568b40a3953e",
+      "Id": "f503346ce8ee4e369e78c5be4090e162",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "2eed15bf3ee24b8498f1ad9a16f3253e",
+      "End": "8f5c48e9681a44109e715af7552d3357",
+      "Id": "3e20c2cd83444f8f8482289d6805855d",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "70201546929240b685afa1581baefa41",
+      "End": "2822461c6d4243c58ca8539ff7ebfb50",
+      "Id": "d179ddd7e3704ae49503f747844503b9",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d5df09bb33ca40b28f326da3fecb6766",
+      "End": "8223fe3d5d934961b2760a771270bf16",
+      "Id": "73bc183e9ebc4d5297de6f66a962af82",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "8cf2125d45a54429a9f013c0e89825ce",
+      "End": "bf513a074bfa4f6aa7e1194a47470885",
+      "Id": "e58df13bef7141b2b7b4dac559c9a43f",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "94b352f096544046ab85ce8d8580df45",
+      "End": "dc1f8caaaadc4894a133d11d88c7ee83",
+      "Id": "cce5a768b7c64aa9b38610b41858c080",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b716fba92ccc4fdeacea618f63670cc4",
+      "End": "e2551b07275c4f33ad44d26427428185",
+      "Id": "a2d1471eca46474988cf0265f112a73c",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "b716fba92ccc4fdeacea618f63670cc4",
+      "End": "c88a39d2bc984d549b6e4e87911a885a",
+      "Id": "8fadbd6a9ea442ddae43d54d7021e1ea",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1cd1c988d9f44411956d9528f3b0d85f",
+      "End": "2864a1db7d514af2acf1e1b8ba16f4a4",
+      "Id": "104b457ff61549a096215aa8d3738f03",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "1cd1c988d9f44411956d9528f3b0d85f",
+      "End": "0202e43befb34a80aa10883ee88af89b",
+      "Id": "0062c3268c0e435ea23e2dff7d12b610",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d029f89733074ac8911b0561d79d6135",
+      "End": "8e67c8fe608d4172806bc8026d8acc40",
+      "Id": "da37d8a3fcc84402bffdbd9ecf00e5b7",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "d029f89733074ac8911b0561d79d6135",
+      "End": "d944b20da9e84e03b0e080afcd6f70aa",
+      "Id": "d11a4c0dc73d4100971a2f7411bee798",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "dcf604c82af0493580632e1238fb4700",
+      "End": "9455fce7147d4ce4932987ae9507ec89",
+      "Id": "c6c5a4fbeea6478a995a45b610bd1a61",
+      "IsHidden": "False"
+    },
+    {
+      "Start": "12ae46c6d530442c935a0fdc3896fcb2",
+      "End": "1b53a515dbcd43c7b071ab269ee0698e",
+      "Id": "363ad0f68c7546f084e56918fc194cb9",
+      "IsHidden": "False"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "rede_hidraulica.inp",
+      "ReferenceType": "External",
+      "Nodes": [
+        "54fa2ce8488d4f53b785b726e733f3f7"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.13",
+      "Data": {}
+    },
+    {
+      "ExtensionGuid": "DFBD9CC0-DB40-457A-939E-8C8555555A9D",
+      "Name": "Generative Design",
+      "Version": "2.0",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "Nenhum",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.13.1.3887",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Visualização do plano de fundo",
+      "EyeX": -14.612985610961914,
+      "EyeY": 23.891458511352539,
+      "EyeZ": 50.5181999206543,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "ConnectorPins": [],
+    "NodeViews": [
+      {
+        "Name": "All Elements of Category in View",
+        "ShowGeometry": true,
+        "Id": "ca46dec1a9454340ba22583b9988e48e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 488.423078825173,
+        "Y": 66.2605335451552
+      },
+      {
+        "Name": "Tabela de Nós",
+        "ShowGeometry": true,
+        "Id": "11a1f2d6024e47e08a8e8b86a3a31120",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -212.37751701101706,
+        "Y": -130.21796402208207
+      },
+      {
+        "Name": "Tabela de Trechos",
+        "ShowGeometry": true,
+        "Id": "70de4e54a23340d0a65e76b5edc0e23d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -244.50994834388433,
+        "Y": 11.214034409066471
+      },
+      {
+        "Name": "All Elements of Category in View",
+        "ShowGeometry": true,
+        "Id": "f020a8d16ea44c059a99bbbfab50405b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 516.9316864279034,
+        "Y": 293.31175449792221
+      },
+      {
+        "Name": "Categories",
+        "ShowGeometry": true,
+        "Id": "1ecbbd172eb0418fa211fdbf8b5b9ee6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 237.57041788309914,
+        "Y": 297.43945900968964
+      },
+      {
+        "Name": "Categories",
+        "ShowGeometry": true,
+        "Id": "790f66b1b7204b41974ebad81141fc10",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 178.71208154424335,
+        "Y": 60.082468973789958
+      },
+      {
+        "Name": "Set Names Pipes",
+        "ShowGeometry": true,
+        "Id": "8b7d32312c3a4e39ab6a7ccd66e2fd95",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 868.84878351563941,
+        "Y": 286.45839591670494
+      },
+      {
+        "Name": "Map Nodes in Pipes",
+        "ShowGeometry": true,
+        "Id": "114186702f9c4c40a20a5b401e29a955",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1200.0485550786484,
+        "Y": 69.023274758733123
+      },
+      {
+        "Name": "Watch",
+        "ShowGeometry": true,
+        "Id": "797e309893484c08a6a4a02da2970bc5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1181.0271936587312,
+        "Y": 384.93923345256377
+      },
+      {
+        "Name": "Parameter Name",
+        "ShowGeometry": true,
+        "Id": "79c72daa44ec463ab23210155b487640",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -239.66805149253105,
+        "Y": -268.08124791545015
+      },
+      {
+        "Name": "Set Names Nodes",
+        "ShowGeometry": true,
+        "Id": "e5a8b023b73745938dec5f4985475051",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 868.679144882689,
+        "Y": 71.3105126642924
+      },
+      {
+        "Name": "Template",
+        "ShowGeometry": true,
+        "Id": "1005a0f673134fe896c833e441a2fe90",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1277.8365543059872,
+        "Y": -156.28731034800214
+      },
+      {
+        "Name": "Generate list",
+        "ShowGeometry": true,
+        "Id": "13cd07be46ac42c88827766366df4da0",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1736.5042635808657,
+        "Y": 106.78967781046791
+      },
+      {
+        "Name": "Save File",
+        "ShowGeometry": true,
+        "Id": "54fa2ce8488d4f53b785b726e733f3f7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 2066.0918473129923,
+        "Y": 147.26643882763577
+      }
+    ],
+    "Annotations": [],
+    "X": 30.164980214765819,
+    "Y": 183.21197803037307,
+    "Zoom": 0.30082491044735538
+  }
+}
